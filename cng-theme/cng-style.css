@@ -3,8 +3,30 @@
 
 body, table, form, input, td, th, p, textarea, select {
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 #main-table {
   background-image: url(snowrabbit.png) !important;
+}
+#header{
+  z-index: 1000;
+  height: 55px!important;
+  padding-top: 15px;
+  padding-left: 5px;
+  background: #ffffff;
+  position: relative;
+}
+#header .top-sticker{
+  position: relative;
+}
+
+#breadcrumbBar{
+  background-color: #b72a16;
+  color: #fff;
+  border-top: 1px solid #036;
+  border-bottom: none!important;
+  margin-bottom: 15px;
+  padding-left: 8px!important;
+  height: 35px!important;
 }
