@@ -14,12 +14,31 @@ body, table, form, input, td, th, p, textarea, select {
   height: 85px;
   background: #ffffff;
   position: relative;
+  padding: 15px 15px 0;
 }
 #header .logo{
   display: inline-block;
   margin: 0;
-  padding-left: 15px;
-  padding-top: 15px;
+}
+
+#header .searchbox,
+#header .login{
+  display: inline-block;
+  padding: 15px 15px 0;
+  height: 60px;
+  float: right;
+}
+
+#header .login{
+  position: relative;
+  top: 0;
+  color: #333;
+  margin: 0;
+}
+
+#header .login a:hover{
+  color: #ada074;
+  text-decoration: none;
 }
 
 #jenkins-home-link {
