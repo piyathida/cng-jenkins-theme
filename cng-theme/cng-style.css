@@ -65,3 +65,10 @@ body, table, form, input, td, th, p, textarea, select {
   padding-left: 8px!important;
   height: 35px;
 }
+
+#breadcrumbs{
+  height: auto;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
