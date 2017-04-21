@@ -6,9 +6,6 @@ body, table, form, input, td, th, p, textarea, select {
   font-size: 14px;
 }
 
-#jenkins-home-link {
-  background-image: url(logo-cng.png) !important;
-}
 #header{
   z-index: 1000;
   height: 55px!important;
@@ -17,6 +14,13 @@ body, table, form, input, td, th, p, textarea, select {
   background: #ffffff;
   position: relative;
 }
+#jenkins-home-link {
+  background-image: url(logo-cng-w.png) !important;
+  background-size: 100%;
+  width: 250px;
+  height: 60px;
+}
+
 #header .top-sticker{
   position: relative;
 }
