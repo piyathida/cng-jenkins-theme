@@ -6,7 +6,7 @@ body, table, form, input, td, th, p, textarea, select {
   font-size: 14px;
 }
 
-#main-table {
+#jenkins-home-link {
   background-image: url(logo-cng.png) !important;
 }
 #header{
