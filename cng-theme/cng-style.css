@@ -144,7 +144,7 @@ img[src*="red.png"]{
 }
 img[src*="images/48x48/blue.png"],
 img[src*="images/48x48/red.png"]{
-  padding: 0 32px 0 0;
+  padding: 0 48px 0 0;
 }
 img[src*="images/32x32/blue.png"],
 img[src*="images/32x32/red.png"]{
