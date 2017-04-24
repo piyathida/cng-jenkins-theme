@@ -91,12 +91,12 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
 
 #breadcrumbs LI A:link,
 #breadcrumbs LI A:visited{
-  color: #fff;
+  color: #fff!important;
 }
 
 #breadcrumbs LI A:hover,
 #crumbs LI A:focus{
-  color: #ada074;
+  color: #ada074 !important;
 }
 
 #right-top-nav{
