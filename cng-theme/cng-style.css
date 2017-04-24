@@ -177,8 +177,8 @@ img[src*="red.png"]{
   height: 80vh;
 }
 
-@media (min-width: 1170px){
-    body.two-column #side-panel {
+@media screen and (min-width: 1170px){
+  body.two-column #side-panel{
       width: 320px;
   }
 }
