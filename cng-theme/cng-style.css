@@ -75,9 +75,14 @@ body, table, form, input, td, th, p, textarea, select {
   background-color: #333;
   border: none !important;
   margin: 0;
-  padding: 0;
+  padding: 3px 0 0 8px;
 }
-#breadcrumbs li a,
+#breadcrumbs li:hover{
+  background-color: transparent;
+  color: #ada074;
+  text-decoration: none;
+}
+#breadcrumbs li a:link,
 #breadcrumbs li a:visited{
   color: #fff;
 }
