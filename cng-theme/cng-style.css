@@ -145,6 +145,7 @@ img[src*="red.png"]{
 img[src*="images/48x48/blue.png"],
 img[src*="images/48x48/red.png"]{
   padding: 0 48px 0 0;
+  margin-right: 10px;
 }
 img[src*="images/32x32/blue.png"],
 img[src*="images/32x32/red.png"]{
@@ -170,7 +171,7 @@ img[src*="red.png"]{
 
 /* ========== Sidebar ========== */
 #side-panel{
-  background-color: #e5e3df;
+  background-color: ##373737;
 }
 
 /* ========== Footer ========== */
@@ -182,4 +183,5 @@ footer{
 pre.console-output{
   background-color: #333;
   color: #fff;
+  padding: 10px
 }
