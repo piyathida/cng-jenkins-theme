@@ -77,12 +77,14 @@ body, table, form, input, td, th, p, textarea, select {
   margin: 0;
   padding: 3px 0 0 8px!important;
 }
-#breadcrumbs li:hover{
+#breadcrumbs LI:hover,
+A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   background-color: transparent;
   color: #ada074;
   text-decoration: none;
 }
-#breadcrumbs li a:link,
-#breadcrumbs li a:visited{
+
+#breadcrumbs LI A:link,
+#breadcrumbs LI A:visited{
   color: #fff !important;
 }
