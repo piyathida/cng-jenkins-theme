@@ -29,6 +29,10 @@ body, table, form, input, td, th, p, textarea, select {
   float: right;
 }
 
+#header .login{
+  text-transform: uppercase;
+}
+
 #header .login a,
 #header .login a:visited{
   position: relative;
@@ -79,14 +83,23 @@ body, table, form, input, td, th, p, textarea, select {
 }
 #breadcrumbs LI:hover,
 A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
-  background-color: transparent;
+  background-color: transparent!important;
   color: #ada074;
   text-decoration: none;
 }
 
 #breadcrumbs LI A:link,
 #breadcrumbs LI A:visited{
-  color: #fff !important;
+  color: #fff;
+}
+
+#breadcrumbs LI A:hover,
+#crumbs LI A:focus{
+  color: #ada074;
+}
+
+#right-top-nav{
+  padding-top: 2px;
 }
 
 #right-top-nav .smallfont{
