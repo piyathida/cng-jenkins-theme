@@ -152,6 +152,10 @@ img[src*="red.png"]{
   background-color: red;
 }
 
+.bigtable td{
+  padding: 10px;
+}
+
 footer{
   background-color: #fff;
   border-bottom: none;
