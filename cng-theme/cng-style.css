@@ -31,6 +31,7 @@ body, table, form, input, td, th, p, textarea, select {
 
 #header .login{
   text-transform: uppercase;
+  color: #333;
 }
 
 #header .login a,
