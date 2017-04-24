@@ -176,6 +176,13 @@ img[src*="red.png"]{
   color: #ada074;
   height: 80vh;
 }
+
+@media (min-width: 1170px){
+    body.two-column #side-panel {
+      width: 320px;
+  }
+}
+
 #tasks{
   margin-bottom: 0;
   padding: 15px;
@@ -184,7 +191,7 @@ img[src*="red.png"]{
 #tasks .task a.task-link{
   color: #fff;
 }
-#task .pane-frame{
+.pane-frame{
   border: none;
   border-radius: 0;
 }
