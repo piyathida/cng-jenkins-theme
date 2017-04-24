@@ -191,7 +191,7 @@ img[src*="red.png"]{
 #tasks .task a.task-link{
   color: #fff;
 }
-#buildQueue .pane-frame{
+#buildQueue.pane-frame{
   border: none;
   border-radius: 0;
 }
