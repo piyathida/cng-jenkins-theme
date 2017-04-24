@@ -78,7 +78,7 @@ body, table, form, input, td, th, p, textarea, select {
 #breadcrumbs{
   background-color: #333;
   border: none !important;
-  height: 35px;
+  height: 35px !important;
   padding: 3px 0 0 8px!important;
 }
 #breadcrumbs LI:hover,
