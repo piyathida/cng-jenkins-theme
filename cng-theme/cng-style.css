@@ -8,6 +8,14 @@ body, table, form, input, td, th, p, textarea, select {
   font-size: 14px;
 }
 
+a,a:link,a:visited{
+  color: #326ca6;
+  text-decoration: none;
+}
+a:hover{
+  color: #ada074;
+}
+
 /* ========== Header ========== */
 #header{
   z-index: 1000;
@@ -117,10 +125,10 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
-img[src *= "images/32x32/blue.png"]{
-  content: '';
-  width: 32px;
-  height: 32px;
+img[src*="images/32x32/blue.png"]:before{
+  content: "";
+}
+img[src*="images/32x32/blue.png"]{
   background-color: green;
   border-radius: 50%;
 }
