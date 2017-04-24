@@ -142,7 +142,7 @@ img[src*="images/24x24/red.png"]{
 
 img[src*="images/16x16/blue.png"],
 img[src*="images/16x16/red.png"]{
-  padding: 0 24px 0 0;
+  padding: 0 16px 0 0;
 }
 
 img[src*="blue.png"]{
