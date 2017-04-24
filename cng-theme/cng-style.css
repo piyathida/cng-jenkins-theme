@@ -79,7 +79,7 @@ a:hover{
   background-color: #333;
   color: #fff;
   border: none;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   padding-left: 8px!important;
   height: 35px;
 }
@@ -125,10 +125,9 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
-img[src*="images/32x32/blue.png"]:before{
-  content: "";
-}
 img[src*="images/32x32/blue.png"]{
   background-color: green;
   border-radius: 50%;
+  padding: 0 32px 0 0;
+  margin-left: 5px;
 }
