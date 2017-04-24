@@ -125,12 +125,26 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
-img[src*="images/32x32/blue.png"],
-img[src*="images/32x32/red.png"]{
+img[src*="blue.png"],
+img[src*="red.png"]{
   border-radius: 50%;
-  padding: 0 32px 0 0;
   margin-left: 5px;
 }
+img[src*="images/32x32/blue.png"],
+img[src*="images/32x32/red.png"]{
+  padding: 0 32px 0 0;
+}
+
+img[src*="images/24x24/blue.png"],
+img[src*="images/24x24/red.png"]{
+  padding: 0 24px 0 0;
+}
+
+img[src*="images/16x16/blue.png"],
+img[src*="images/16x16/red.png"]{
+  padding: 0 24px 0 0;
+}
+
 img[src*="blue.png"]{
   background-color: green;
 }
