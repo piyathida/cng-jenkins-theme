@@ -79,6 +79,14 @@ table tr td{
   left: 0 !important;
 }
 
+#searchbox{
+  background: white url(../images/16x16/search.png) no-repeat 5px center;
+  height: 30px;
+  padding-left: 25px;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
 /* ========== Breadcrumbs ========== */
 #breadcrumbBar{
   background-color: #333;
