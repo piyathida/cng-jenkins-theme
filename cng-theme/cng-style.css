@@ -29,7 +29,8 @@ body, table, form, input, td, th, p, textarea, select {
   float: right;
 }
 
-#header .login{
+#header .login a,
+#header .login a:visited{
   position: relative;
   top: 0;
   color: #333;
@@ -57,6 +58,7 @@ body, table, form, input, td, th, p, textarea, select {
   position: relative;
 }
 
+
 #breadcrumbBar{
   background-color: #333;
   color: #fff;
@@ -67,8 +69,9 @@ body, table, form, input, td, th, p, textarea, select {
 }
 
 #breadcrumbs{
-  height: auto;
-  border: none;
+  background-color: #333;
+  color: #fff;
+  border: none !important;
   margin: 0;
   padding: 0;
 }
