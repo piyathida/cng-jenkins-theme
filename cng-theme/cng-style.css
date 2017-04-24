@@ -172,6 +172,8 @@ img[src*="red.png"]{
 /* ========== Sidebar ========== */
 #side-panel{
   background-color: #373737;
+  padding: 0;
+  color: #ada074;
 }
 
 /* ========== Footer ========== */
