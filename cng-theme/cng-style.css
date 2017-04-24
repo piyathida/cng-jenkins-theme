@@ -88,3 +88,17 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
 #breadcrumbs LI A:visited{
   color: #fff !important;
 }
+
+#right-top-nav .smallfont{
+  font-size: 12px;
+}
+#right-top-nav .smallfont a,
+#right-top-nav .smallfont a:link,
+#right-top-nav .smallfont a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+#right-top-nav .smallfont a:hover{
+  color: #ada074;
+  text-decoration: none;
+}
