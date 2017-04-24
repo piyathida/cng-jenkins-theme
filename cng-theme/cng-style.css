@@ -125,8 +125,15 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
-img[src*="images/32x32/blue.png"]{
+
+img[src*=blue.png]{
   background-color: green;
+}
+img[src*="red.png"]{
+  background-color: red;
+}
+img[src*="images/32x32/blue.png"],
+img[src*="images/32x32/red.png"]{
   border-radius: 50%;
   padding: 0 32px 0 0;
   margin-left: 5px;
