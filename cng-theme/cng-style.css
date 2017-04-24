@@ -17,7 +17,7 @@ a:hover{
 }
 
 table tr td{
-  padding: 10px;
+  padding: 10px !important;
 }
 
 /* ========== Header ========== */
@@ -79,6 +79,7 @@ table tr td{
   left: 0 !important;
 }
 
+/* ========== Breadcrumbs ========== */
 #breadcrumbBar{
   background-color: #333;
   color: #fff;
@@ -129,6 +130,13 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
+/* ========== Tab ========== */
+.tabBar .tab,
+.tabBar .tab:first-child{
+  margin-left: 0;
+}
+
+/* ========== Status ========== */
 img[src*="blue.png"],
 img[src*="red.png"]{
   border-radius: 50%;
@@ -156,6 +164,7 @@ img[src*="red.png"]{
   background-color: red;
 }
 
+/* ========== Footer ========== */
 footer{
   background-color: #fff;
   border-bottom: none;
