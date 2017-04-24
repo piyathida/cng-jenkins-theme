@@ -131,7 +131,7 @@ img[src*="images/32x32/red.png"]{
   padding: 0 32px 0 0;
   margin-left: 5px;
 }
-img[src*=blue.png]{
+img[src*="blue.png"]{
   background-color: green;
 }
 img[src*="red.png"]{
