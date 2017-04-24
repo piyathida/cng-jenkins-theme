@@ -16,6 +16,10 @@ a:hover{
   color: #ada074;
 }
 
+table tr td{
+  padding: 10px;
+}
+
 /* ========== Header ========== */
 #header{
   z-index: 1000;
@@ -150,10 +154,6 @@ img[src*="blue.png"]{
 }
 img[src*="red.png"]{
   background-color: red;
-}
-
-.bigtable td{
-  padding: 10px;
 }
 
 footer{
