@@ -151,3 +151,8 @@ img[src*="blue.png"]{
 img[src*="red.png"]{
   background-color: red;
 }
+
+footer{
+  background-color: #fff;
+  border-bottom: none;
+}
