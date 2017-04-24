@@ -117,7 +117,8 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
-img[src*="images/32x32/blue.png"]{
+img[src ="images/32x32/blue.png"]{
+  content: '';
   width: 32px;
   height: 32px;
   background-color: green;
