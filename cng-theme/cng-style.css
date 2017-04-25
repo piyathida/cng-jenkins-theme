@@ -192,7 +192,7 @@ img[src*="red.png"]{
 
 @media screen and (min-width: 1170px){
   body.two-column #side-panel{
-      width: 320px;
+      width: 300px;
   }
 }
 
@@ -200,9 +200,12 @@ img[src*="red.png"]{
   margin-bottom: 0;
 }
 #tasks .task{
-  padding: 15px;
+  padding: 8px 15px;
   font-size: 15px;
   margin-bottom: 0;
+}
+#tasks .task:hover{
+  background-color: #ada074;
 }
 #tasks .task a{
   color: #fff;
