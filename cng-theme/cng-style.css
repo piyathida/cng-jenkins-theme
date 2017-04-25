@@ -89,6 +89,9 @@ table tr td{
 #menuSelector{
   visibility: visible !important;
 }
+#menuSelector.inverse{
+  background-image: none;
+}
 
 /* ========== Breadcrumbs ========== */
 #breadcrumbBar{
