@@ -88,9 +88,7 @@ table tr td{
 
 #menuSelector{
   visibility: visible !important;
-}
-#menuSelector.inverse{
-  background-image: none;
+  background-image: url(menu_down_arrow.png) !important;
 }
 
 /* ========== Breadcrumbs ========== */
