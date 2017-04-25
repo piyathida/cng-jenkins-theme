@@ -123,8 +123,9 @@ table tr td{
 }
 
 #search-box{
+  background: none!important;
   height: 30px;
-  padding-left: 25px;
+  padding-left: 8px;
   border-radius: 2px;
   box-shadow: none;
 }
