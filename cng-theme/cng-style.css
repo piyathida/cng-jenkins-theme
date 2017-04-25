@@ -225,6 +225,12 @@ img[src*="red.png"]{
   background-color: red;
 }
 
+img[src*="images/32x32/health-80plus.png"]{
+  padding: 0 32px 0 0;
+  font-family: "Flaticon";
+  content: "\f100";
+}
+
 /* ========== Sidebar ========== */
 #side-panel{
   background-color: #373737;
