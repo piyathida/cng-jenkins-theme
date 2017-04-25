@@ -80,7 +80,6 @@ table tr td{
 }
 
 #search-box{
-  background: white url(../images/16x16/search.png) no-repeat 5px center;
   height: 30px;
   padding-left: 25px;
   border-radius: 2px;
