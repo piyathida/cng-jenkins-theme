@@ -1,28 +1,167 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 
 /* ========== General ========== */
+*{
+  outline: none;
+}
+
+html,body{
+  height: 100%;
+}
 body, table, form, input, td, th, p, textarea, select {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
 }
 
 a,a:link,a:visited{
-  color: #326ca6;
-  text-decoration: none;
+  color: #333;
+  text-decoration: none!important;
 }
 a:hover{
   color: #ada074;
 }
 
-table tr td{
+input[type=submit],
+button{
+  color: #fff !important;
+  border: none !important;
+  background-color: #373737 !important;
+  transition: 0.5s all;
+  padding: 5px 10px;
+  height: 33px;
+  font-size: 12px;
+}
+input[type=submit]:hover,
+button:hover{
+  border: none !important;
+  background-color: #ada074 !important;
+}
+
+input,
+select{
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+input[type=text],
+input[type=password]{
+  background: none !important;
+  border: 1px solid #ccc;
+  padding: 5px;
+  height: 30px;
+}
+
+#page-body{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* ========== Table ========== */
+table tr{
+  border-bottom: 1px solid #dfdfdf !important;
+}
+table tr td,
+table tr th{
   padding: 10px !important;
+}
+table tr th{
+  background-color: #ada074!important;
+}
+table.stripped tr:hover, table.stripped-even tr:hover, table.stripped-odd tr:hover,
+table.stripped-odd tr:nth-child(odd){
+  background-color: rgba(229,227,223,0.5)!important;
+}
+table tr:first-child th:first-child{
+  border-top-left-radius: 0!important;
+}
+table tr:first-child th:last-child{
+  border-top-right-radius: 0!important;
+}
+table#logRecorders{
+  margin-bottom: 20px;
+}
+table.config-table tr{
+    border: none!important;
+}
+table.sortable {
+    border-collapse: collapse;
+}
+table.sortable tr{
+  border-bottom: 1px solid #dfdfdf !important;
+}
+/* Progress */
+table.progress-bar{
+  border: none !important;
+  background-color: #efefef !important;
+}
+table.progress-bar td.progress-bar-left{
+  background-color: #efefef;
+}
+table.progress-bar td.progress-bar-done{
+  background-color: #af8930 !important;
+}
+
+
+/* ========== Config Jenkins ========== */
+.build-row.multi-line .build-row-cell .left-bar{
+  border-left: none;
+}
+.build-row-cell .pane.build-name .display-name{
+  margin-left: 25px;
+}
+#buildHistoryPage .build-search-row .clear{
+  top: 12px;
+  right: 15px;
+  opacity: 0.5;
+}
+#buildHistoryPage .build-search-row .clear:hover{
+  top: 15px;
+  padding: 0px 6px;
+  border-top-right-radius: 0;
+}
+
+
+/* ========== Tab ========== */
+.tabBar{
+  top: 0px;
+}
+
+.tabBar .tab,
+.tabBar .tab:first-child{
+  margin-left: 0;
+}
+
+.tabBar .tab a,
+.tabBar .tab a.addTab{
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: #373737;
+  padding: 7px 20px;
+  margin-right: 1px;
+}
+.tabBar .tab a:hover,
+.tabBar .tab a.addTab:hover{
+  background-color: #e5e3df;
+  color: #373737;
+}
+.tabBar [type=radio]:checked ~ a{
+  background-color: #ada074!important;
+  border-radius: 0;
+  border: none;
+  padding: 7px 20px;
 }
 
 /* ========== Header ========== */
 #header{
-  z-index: 1000;
+  z-index: 0;
   height: 85px;
   background: #ffffff;
   position: relative;
@@ -87,11 +226,6 @@ table tr td{
   box-shadow: none;
 }
 
-#menuSelector{
-  visibility: visible !important;
-  background-image: url(menu_down_arrow.png) !important;
-}
-
 /* ========== Breadcrumbs ========== */
 #breadcrumbBar{
   background-color: #333;
@@ -143,61 +277,49 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   text-decoration: none;
 }
 
-/* ========== Tab ========== */
-.tabBar .tab,
-.tabBar .tab:first-child{
+#breadcrumb-menu{
+
+}
+.yuimenubar li, .yuimenu li{
+  outline: none;
+}
+
+/* ========== Main Content ========== */
+#main-panel{
+  display: inline-block;
+  width: 100%;
+  min-height: 100%;
   margin-left: 0;
+  background-color: #fff;
 }
-
-/* ========== Status ========== */
-img[src*="blue.png"],
-img[src*="red.png"]{
-  border-radius: 50%;
-  margin-left: 5px;
-}
-img[src*="images/48x48/blue.png"],
-img[src*="images/48x48/red.png"]{
-  padding: 0 48px 0 0;
-  margin-right: 10px;
-}
-img[src*="images/32x32/blue.png"],
-img[src*="images/32x32/red.png"]{
-  padding: 0 32px 0 0;
-}
-
-img[src*="images/24x24/blue.png"],
-img[src*="images/24x24/red.png"]{
-  padding: 0 24px 0 0;
-}
-
-img[src*="images/16x16/blue.png"],
-img[src*="images/16x16/red.png"]{
-  padding: 0 16px 0 0;
-}
-
-img[src*="blue.png"]{
-  background-color: green;
-}
-img[src*="red.png"]{
-  background-color: red;
+@media (min-width: 1170px){
+  body.two-column #main-panel {
+      padding-left: 300px;
+      margin-left: 0;
+  }
 }
 
 /* ========== Sidebar ========== */
 #side-panel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*display: inline-block;*/
+  width: 20%;
+  min-height: 100%;
   background-color: #373737;
   padding: 0;
   color: #ada074;
-  height: 80vh;
 }
 
 @media screen and (min-width: 1170px){
   body.two-column #side-panel{
-      width: 300px;
+      width: 20%
   }
 }
 
 #tasks{
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 #tasks .task{
   padding: 8px 15px;
@@ -209,23 +331,417 @@ img[src*="red.png"]{
 }
 #tasks .task a{
   color: #fff;
-  text-decoration: none;
+  font-weight: bold;
+  padding-right: 5px;
 }
-#buildQueue{
-  border: none;
+.pane-frame{
+  border: none!important;
   border-radius: 0;
+}
+.pane-header{
+  border-radius: 0;
+  background-color: #ada074;
+}
+.pane-header a,
+.pane-header a:hover{
+  color: #333;
+}
+.pane-content{
+  background-color: #e5e3df;
 }
 
 
 /* ========== Footer ========== */
 footer{
+  display: none;
   background-color: #fff;
   border-bottom: none;
+  position: relative !important;
 }
 
 /* ========== Console ========== */
-pre.console-output{
-  background-color: #333;
+pre{
+  background-color: #373737!important;
   color: #fff;
   padding: 10px
+}
+pre a.model-link{
+  color: #ada074 !important;
+  font-weight: bold;
+}
+pre.logrecord-metadata{
+  font-size: 80%;
+}
+.CodeMirror-scroll{
+  background-color: #666;
+}
+.CodeMirror-gutter{
+  background-color: #666!important;
+}
+.CodeMirror-gutter-text,
+.cm-s-default span.cm-variable{
+  color: #fff!important;
+}
+
+/* ========== Status ========== */
+img[src*="grey_anime.gif"],
+img[src*="blue_anime.gif"],
+img[src*="yellow_anime.gif"],
+img[src*="red_anime.gif"],
+img[src*="grey.png"],
+img[src*="yellow.png"],
+img[src*="blue.png"],
+img[src*="red.png"]{
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+img[src*="images/48x48/grey_anime.gif"],
+img[src*="images/48x48/blue_anime.gif"],
+img[src*="images/48x48/yellow_anime.gif"],
+img[src*="images/48x48/red_anime.gif"],
+img[src*="images/48x48/grey.png"],
+img[src*="images/48x48/blue.png"],
+img[src*="images/48x48/yellow.png"],
+img[src*="images/48x48/red.png"]{
+  padding: 0 48px 0 0;
+  margin-right: 10px;
+}
+
+img[src*="images/32x32/grey_anime.gif"],
+img[src*="images/32x32/blue_anime.gif"],
+img[src*="images/32x32/yellow_anime.gif"],
+img[src*="images/32x32/red_anime.gif"],
+img[src*="images/32x32/grey.png"],
+img[src*="images/32x32/blue.png"],
+img[src*="images/32x32/yellow.png"],
+img[src*="images/32x32/red.png"]{
+  padding: 0 32px 0 0;
+}
+
+img[src*="images/24x24/grey_anime.gif"],
+img[src*="images/24x24/blue_anime.gif"],
+img[src*="images/24x24/yellow_anime.gif"],
+img[src*="images/24x24/red_anime.gif"],
+img[src*="images/24x24/grey.png"],
+img[src*="images/24x24/blue.png"],
+img[src*="images/24x24/red.png"]{
+  padding: 0 24px 0 0;
+}
+img[src*="images/16x16/grey_anime.gif"],
+img[src*="images/16x16/blue_anime.gif"],
+img[src*="images/16x16/yellow_anime.gif"],
+img[src*="images/16x16/red_anime.gif"],
+img[src*="images/16x16/grey.png"],
+img[src*="images/16x16/blue.png"],
+img[src*="images/16x16/yellow.png"],
+img[src*="images/16x16/red.png"]{
+  padding: 0 16px 0 0;
+}
+
+img[src*="grey_anime.gif"],
+img[src*="grey.png"]{
+  background-color: #DDDDDD;
+}
+
+img[src*="blue_anime.gif"],
+img[src*="blue.png"]{
+  background-color: #9BDF46;
+}
+
+img[src*="yellow_anime.gif"],
+img[src*="yellow.png"]{
+  background-color: #FFCD38;
+}
+
+
+img[src*="red_anime.gif"],
+img[src*="red.png"]{
+  background-color: #E84545;
+}
+
+.icon-grey-anime,
+.icon-red-anime,
+.icon-yellow-anime,
+.icon-blue-anime{
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* ========== Icon ========== */
+.icon-health-80plus{
+  content: url('/icons/sun.png');
+}
+.icon-health-00to19{
+  content: url('/icons/storm-cloud.png');
+}
+.icon-health-60to79{
+  content: url('/icons/cloudy-day.png');
+}
+.icon-health-40to59{
+  content: url('/icons/cloud.png');
+}
+.icon-health-20to39{
+  content: url('/icons/rain-cloud.png');
+}
+
+
+
+/* ========== Icon Side Menu ==========*/
+#side-panel .icon-new-package{
+  content: url('/icons/add-button.png');
+}
+#side-panel .icon-clock{
+  content: url('/icons/build.png');
+}
+#side-panel .icon-gear2{
+  content: url('/icons/tool.png');
+}
+#side-panel .icon-credentials-new-domain{
+  content: url('/icons/castel.png');
+}
+#side-panel .icon-user{
+  content: url('/icons/users.png');
+}
+#side-panel .icon-credentials-system-store{
+  content: url('/icons/system.png');
+}
+#side-panel .icon-credentials-credentials{
+  content: url('/icons/key.png');
+}
+#side-panel .icon-up{
+  content: url('/icons/up.png');
+}
+#side-panel .icon-edit-delete{
+  content: url('/icons/delete.png');
+}
+#side-panel .icon-previous{
+  content: url('/icons/left.png');
+}
+#side-panel .icon-setting{
+  content: url('/icons/settings.png');
+}
+#side-panel .icon-clipboard{
+  content: url('/icons/clipboard.png');
+}
+#side-panel .icon-folder{
+  content: url('/icons/folder.png');
+}
+#side-panel .icon-document{
+  content: url('/icons/paper.png');
+}
+#side-panel .icon-next{
+  content: url('/icons/right.png');
+}
+#side-panel .icon-terminal{
+  content: url('/icons/terminal.png');
+}
+#side-panel .icon-notepad{
+  content: url('/icons/paper.png');
+}
+#side-panel .icon-new-user,
+#side-panel .icon-new-computer{
+  content: url('/icons/add-button.png');
+}
+#side-panel .icon-search{
+  content: url('/icons/search.png');
+}
+#side-panel .icon-folder-delete{
+  content: url('/icons/folder-delete.png');
+}
+#side-panel .icon-monitor{
+  content: url('/icons/monitor.png');
+}
+
+
+/* ========== Icon Main Menu ========== */
+img[src*="credentials.png"],
+img[src*="new-credential.png"],
+img[src*="gear2.png"]{
+  content: url('/icons/key-black.png');
+}
+.icon-secure,
+img[src*="secure.png"]{
+  content: url('/icons/lock-black.png');
+}
+.icon-setting,
+img[src*="setting.png"]{
+  content: url('/icons/settings-black.png');
+}
+.icon-refresh,
+img[src*="refresh.png"]{
+  content: url('/icons/refresh-black.png');
+}
+.icon-plugin,
+img[src*="plugin.png"]{
+  content: url('/icons/plugin-black.png');
+}
+.icon-computer,
+img[src*="computer.png"]{
+  content: url('/icons/computer-black.png');
+}
+.icon-clipboard,
+img[src*="clipboard.png"]{
+  content: url('/icons/clipboard-black.png');
+}
+.icon-terminal,
+img[src*="terminal.png"]{
+  content: url('/icons/terminal-black.png');
+}
+img[src*="images/24x24/terminal.png"]{
+  height: 24px;
+  width: 24px;
+}
+.icon-monitor,
+img[src*="monitor.png"]{
+  content: url('/icons/monitor-black.png');
+}
+.icon-network,
+img[src*="network.png"]{
+  content: url('/icons/network-black.png');
+}
+.icon-help,
+img[src*="help.png"]{
+  content: url('/icons/help-black.png');
+}
+#searchform .icon-help{
+  width: 24px !important;
+  height: 24px !important;
+  margin-left: 5px;
+}
+.icon-document,
+.icon-notepad,
+img[src*="document.png"],
+img[src*="notepad.png"]{
+  content: url('/icons/paper-black.png');
+}
+.icon-system-log-out,
+img[src*="system-log-out.png"]{
+  content: url('/icons/shutdown-black.png');
+}
+.icon-clock,
+img[src*="clock.png"]{
+  content: url('/icons/build-black.png');
+}
+.icon-new-package,
+img[src*="new-package.png"]{
+  content: url('/icons/add-button-black.png');
+}
+.icon-credentials-domain,
+img[src*="domain.png"]{
+  content: url('/icons/castel-black.png');
+}
+.icon-orange-square,
+img[src*="orange-square.png"]{
+  content: url('/icons/user-admin-black.png');
+}
+.icon-collapse,
+img[src*="collapse.png"]{
+  content: url('/icons/up-black.png');
+}
+.icon-expand,
+img[src*="expand.png"]{
+  content: url('/icons/down-black.png');
+}
+img[src*="atom.gif"]{
+  content: url('/icons/rss.png');
+}
+#description-link .icon-notepad{
+  content: url('/icons/edit-black.png');
+  margin-right: 5px;
+}
+.icon-folder,
+img[src*="folder.png"]{
+  content: url('/icons/folder-black.png');
+}
+.parentPath .icon-folder{
+  margin-right: 10px;
+  width: 32px !important;
+  height: 32px !important;
+}
+.icon-user,
+img[src*="user.png"]{
+  content: url('/icons/users-black.png');
+}
+.icon-stop,
+img[src*="stop.png"]{
+  content: url('/icons/stop-black.png');
+}
+
+
+
+.icon-credentials-system-store{
+  content: url('/icons/system-black.png');
+}
+img[src*="edit-delete.png"]{
+  content: url('/icons/delete-black.png');
+}
+
+.icon-go-next{
+  content: url('/icons/right-black.png');
+}
+.parentPath .icon-go-next{
+  width: 24px!important;
+  height: 24px!important;
+  margin-left: 10px;
+}
+
+
+
+
+#main-panel h1 > img{
+  margin-right: 10px;
+}
+
+/* =========== rss =========== */
+.build-rss-all-link{
+  margin-right: 15px;
+}
+
+
+/* =========== Config Widjet =========== */
+.jenkins-config-widgets{
+  border: none !important;
+  background: none;
+  color: #333;
+}
+.jenkins-config-widgets .form-config.tabBarFrame{
+  border-bottom: none;
+}
+.jenkins-config-widgets .form-config.tabBarFrame .tabBar .tab{
+  margin: 0;
+  border-radius: 0;
+  border: none!important;
+  background-color: #373737;
+  color: #fff;
+  margin-right: 1px;
+  padding: 10px 15px;
+}
+.jenkins-config-widgets .form-config.tabBarFrame .tabBar .tab.active{
+  background-color: #ada074;
+  color: #333;
+}
+
+.jenkins-config-widgets .form-config.tabBarFrame .config-section-activators{
+  padding: 0;
+}
+#jenkins .jenkins-config{
+  border-top: 1px solid #cccccc!important;
 }
