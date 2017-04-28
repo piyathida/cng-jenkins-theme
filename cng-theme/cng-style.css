@@ -24,6 +24,14 @@ a:hover{
   color: #ada074;
 }
 
+input,
+select{
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
 input[type=submit],
 button{
   color: #fff !important;
@@ -40,20 +48,17 @@ button:hover{
   background-color: #ada074 !important;
 }
 
-input,
-select{
-  height: 30px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0;
-}
-
 input[type=text],
 input[type=password]{
   background: none !important;
   border: 1px solid #ccc;
   padding: 5px;
   height: 30px;
+}
+
+input[type=radio],
+input[type=checkbox]{
+  height: auto;
 }
 
 #page-body{
@@ -117,13 +122,24 @@ table.progress-bar td.progress-bar-done{
   margin-left: 25px;
 }
 #buildHistoryPage .build-search-row .clear{
-  top: 12px;
-  right: 15px;
-  opacity: 0.5;
+  display: block;
+  top: 13px;
+  right: 13px;
+  background-color: #373737!important;
+  color: #fff;
+  width: 20px;
+  height: 24px;
+  text-align: center;
+  padding: 0;
 }
 #buildHistoryPage .build-search-row .clear:hover{
-  top: 15px;
-  padding: 0px 6px;
+  top: 13px;
+  right: 13px;
+  background-color: red!important;
+  border: none;
+  text-align: center;
+  opacity: 0.7;
+  padding: 0;
   border-top-right-radius: 0;
 }
 
@@ -337,6 +353,7 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
 .pane-frame{
   border: none!important;
   border-radius: 0;
+  color: #333!important;
 }
 .pane-header{
   border-radius: 0;
@@ -348,6 +365,9 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
 }
 .pane-content{
   background-color: #e5e3df;
+}
+.pane-content .cell{
+  margin-left: 10px;
 }
 
 
@@ -384,6 +404,22 @@ pre.logrecord-metadata{
 }
 
 /* ========== Status ========== */
+
+.icon-event-blue,
+.icon-event-red{
+  border-radius: 50%;
+}
+.timeline-event-icon{
+  content: url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+}
+
+
+
 img[src*="grey_anime.gif"],
 img[src*="blue_anime.gif"],
 img[src*="yellow_anime.gif"],
@@ -444,9 +480,10 @@ img[src*="grey.png"]{
   background-color: #DDDDDD;
 }
 
+.icon-event-blue,
 img[src*="blue_anime.gif"],
 img[src*="blue.png"]{
-  background-color: #9BDF46;
+  background-color: #9BDF46 !important;
 }
 
 img[src*="yellow_anime.gif"],
@@ -454,7 +491,7 @@ img[src*="yellow.png"]{
   background-color: #FFCD38;
 }
 
-
+.icon-event-red,
 img[src*="red_anime.gif"],
 img[src*="red.png"]{
   background-color: #E84545;
@@ -485,6 +522,11 @@ img[src*="red.png"]{
 	}
 }
 
+.timeline-event-icon {
+    width: 10px;
+    height: 10px;
+}
+
 /* ========== Icon ========== */
 .icon-health-80plus{
   content: url('/icons/sun.png');
@@ -511,6 +553,7 @@ img[src*="red.png"]{
 #side-panel .icon-clock{
   content: url('/icons/build.png');
 }
+#side-panel .icon-gear,
 #side-panel .icon-gear2{
   content: url('/icons/tool.png');
 }
@@ -523,6 +566,7 @@ img[src*="red.png"]{
 #side-panel .icon-credentials-system-store{
   content: url('/icons/system.png');
 }
+#side-panel .icon-credentials-new-credential,
 #side-panel .icon-credentials-credentials{
   content: url('/icons/key.png');
 }
@@ -569,6 +613,15 @@ img[src*="red.png"]{
 #side-panel .icon-monitor{
   content: url('/icons/monitor.png');
 }
+#side-panel .icon-save{
+  content: url('/icons/save.png');
+}
+#side-panel .icon-item-move-folder{
+  content: url('/icons/move.png');
+}
+#side-panel img[src*="plugin/git/icons/git-32x32.png"]{
+  content: url('/icons/git.png');
+}
 
 
 /* ========== Icon Main Menu ========== */
@@ -604,13 +657,13 @@ img[src*="computer.png"]{
 img[src*="clipboard.png"]{
   content: url('/icons/clipboard-black.png');
 }
+.icon-credentials-userpass,
+img[src*="userpass.png"]{
+  content: url('/icons/key-black.png');
+}
 .icon-terminal,
 img[src*="terminal.png"]{
   content: url('/icons/terminal-black.png');
-}
-img[src*="images/24x24/terminal.png"]{
-  height: 24px;
-  width: 24px;
 }
 .icon-monitor,
 img[src*="monitor.png"]{
@@ -624,13 +677,10 @@ img[src*="network.png"]{
 img[src*="help.png"]{
   content: url('/icons/help-black.png');
 }
-#searchform .icon-help{
-  width: 24px !important;
-  height: 24px !important;
-  margin-left: 5px;
-}
+.icon-text,
 .icon-document,
 .icon-notepad,
+img[src*="text.png"],
 img[src*="document.png"],
 img[src*="notepad.png"]{
   content: url('/icons/paper-black.png');
@@ -663,21 +713,9 @@ img[src*="collapse.png"]{
 img[src*="expand.png"]{
   content: url('/icons/down-black.png');
 }
-img[src*="atom.gif"]{
-  content: url('/icons/rss.png');
-}
-#description-link .icon-notepad{
-  content: url('/icons/edit-black.png');
-  margin-right: 5px;
-}
 .icon-folder,
 img[src*="folder.png"]{
   content: url('/icons/folder-black.png');
-}
-.parentPath .icon-folder{
-  margin-right: 10px;
-  width: 32px !important;
-  height: 32px !important;
 }
 .icon-user,
 img[src*="user.png"]{
@@ -687,30 +725,70 @@ img[src*="user.png"]{
 img[src*="stop.png"]{
   content: url('/icons/stop-black.png');
 }
-
-
-
+.icon-item-move-folder{
+  content: url('/icons/move-black.png');
+}
 .icon-credentials-system-store{
   content: url('/icons/system-black.png');
+}
+.icon-go-next{
+  content: url('/icons/right-black.png');
 }
 img[src*="edit-delete.png"]{
   content: url('/icons/delete-black.png');
 }
-
-.icon-go-next{
-  content: url('/icons/right-black.png');
+img[src*="atom.gif"]{
+  content: url('/icons/rss.png');
 }
-.parentPath .icon-go-next{
-  width: 24px!important;
-  height: 24px!important;
-  margin-left: 10px;
+img[src*="plugin/git/icons/git-48x48.png"]{
+  content: url('/icons/git-black.png');
 }
-
-
-
+#description-link .icon-notepad{
+  content: url('/icons/edit-black.png');
+  margin-right: 5px;
+}
+.simileAjax-bubble-close-pngTranslucent{
+  background: none!important;
+  content: url('/icons/delete-black.png')!important;
+}
 
 #main-panel h1 > img{
   margin-right: 10px;
+}
+#searchform .icon-help{
+  margin-left: 5px;
+  width: 24px !important;
+  height: 24px !important;
+}
+.parentPath .icon-go-next{
+  margin-left: 10px;
+  width: 24px!important;
+  height: 24px!important;
+}
+.parentPath .icon-folder{
+  margin-right: 10px;
+  width: 32px !important;
+  height: 32px !important;
+}
+img[src*="images/24x24/terminal.png"]{
+  height: 24px;
+  width: 24px;
+}
+
+/* =========== Background Icon =========== */
+.warning{
+  background: none;
+  background-image: url('/icons/warning-black.png');
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: left bottom;
+}
+.error{
+  background: none;
+  background-image: url('/icons/error-black.png');
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: left bottom;
 }
 
 /* =========== rss =========== */
