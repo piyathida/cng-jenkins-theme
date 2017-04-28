@@ -7,6 +7,6 @@ Author
 Piyathida K.
 
 
-Screenshot
+Screenshort
 ------------------------------
 ![alt text](https://github.com/piyathida/cng-jenkins-theme/blob/master/screenshort-cng-theme.png "CNG Jenkins Theme screenshot")
