@@ -573,9 +573,12 @@ img[src*="red.png"]{
 
 /* ========== Icon Main Menu ========== */
 img[src*="credentials.png"],
-img[src*="new-credential.png"],
-img[src*="gear2.png"]{
+img[src*="new-credential.png"]{
   content: url('/icons/key-black.png');
+}
+.icon-gear2,
+img[src*="gear2.png"]{
+  content: url('/icons/tool-black.png');
 }
 .icon-secure,
 img[src*="secure.png"]{
