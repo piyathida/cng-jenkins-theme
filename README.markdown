@@ -8,3 +8,5 @@ Piyathida K.
 
 How to build
 ------------------------------
+
+![Alt text](/screenshot-cng-theme.png?raw=true "CNG Jenkins Theme screenshot")
