@@ -1,12 +1,12 @@
 CNG Theme Plugin for Jenkins
 ==============================
-A plugin for CNG Jenkins.
+A plugin for Cenergy Innovation (CNG) Jenkins.
 
 Author
 ------------------------------
 Piyathida K.
 
-How to build
-------------------------------
 
-![Alt text](/screenshot-cng-theme.png?raw=true "CNG Jenkins Theme screenshot")
+Screenshot
+------------------------------
+![alt text](https://github.com/piyathida/cng-jenkins-theme/blob/master/screenshort-cng-theme.png "CNG Jenkins Theme screenshot")
