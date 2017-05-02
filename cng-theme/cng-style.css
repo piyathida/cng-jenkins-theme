@@ -389,10 +389,9 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
 }
 .pane-content{
   background-color: #e5e3df;
-  margin: 0;
 }
 .pane-content .cell{
-  margin: 0;
+  margin: 0 15px 0 15px;
   min-height: 39px;
   padding: 10px;
 }
