@@ -271,7 +271,7 @@ table.progress-bar td.progress-bar-done{
   color: #fff;
   border: none;
   margin-bottom: 0;
-  padding-left: 8px!important;
+  padding-left: 0px!important;
   height: 35px;
 }
 
