@@ -374,6 +374,7 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
   padding-right: 5px;
 }
 .pane-frame{
+  background-color: #e5e3df;
   border: none!important;
   border-radius: 0;
   color: #333!important;
@@ -388,9 +389,12 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector{
 }
 .pane-content{
   background-color: #e5e3df;
+  margin: 0;
 }
 .pane-content .cell{
-  margin-left: 10px;
+  margin: 0;
+  min-height: 39px;
+  padding: 10px;
 }
 
 
@@ -652,6 +656,9 @@ img[src*="red.png"]{
 #side-panel .icon-item-move-folder{
   content: url('/icons/move.png');
 }
+#side-panel .icon-credentials-user-store{
+  content: url('/icons/user.png');
+}
 #side-panel img[src*="plugin/git/icons/git-32x32.png"]{
   content: url('/icons/git.png');
 }
@@ -757,6 +764,10 @@ img[src*="user.png"]{
 .icon-stop,
 img[src*="stop.png"]{
   content: url('/icons/stop-black.png');
+}
+.icon-credentials-user-store,
+img[src*="user-store.png"]{
+  content: url('/icons/user-black.png');
 }
 .icon-item-move-folder{
   content: url('/icons/move-black.png');
