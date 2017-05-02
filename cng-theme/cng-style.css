@@ -71,6 +71,11 @@ input[type=checkbox]{
   min-height: 100%;
 }
 
+#jenkins .jenkins-config table .bottom-sticker-inner{
+  background-color: rgba(173, 160, 116, 0.5);
+  border: 1px solid #ada074;
+}
+
 /* ========== Table ========== */
 table tr{
   border-bottom: 1px solid #dfdfdf !important;
@@ -114,6 +119,9 @@ table.progress-bar td.progress-bar-left{
 }
 table.progress-bar td.progress-bar-done{
   background-color: #af8930 !important;
+}
+table#projectStatus tr td a.model-link{
+  margin-right: 12px;
 }
 
 
@@ -419,7 +427,10 @@ pre.logrecord-metadata{
   font-size: 80%;
 }
 .CodeMirror-scroll{
-  background-color: #666;
+  background-color: #333;
+}
+.CodeMirror-lines pre{
+  background-color: #aaa!important;
 }
 .CodeMirror-gutter{
   background-color: #666!important;
