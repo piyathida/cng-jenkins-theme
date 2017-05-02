@@ -11,6 +11,9 @@
 html,body{
   height: 100%;
 }
+body{
+  background-color: #fff;
+}
 body, table, form, input, td, th, p, textarea, select {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -66,6 +69,7 @@ input[type=checkbox]{
   display: block;
   width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 
 /* ========== Table ========== */
@@ -177,9 +181,9 @@ table.progress-bar td.progress-bar-done{
 
 /* ========== Header ========== */
 #header{
-  z-index: 0;
+  z-index: 1000;
   height: 85px;
-  background: #ffffff;
+  background: none!important;
   position: relative;
   padding: 15px 15px 0;
 }
@@ -242,9 +246,29 @@ table.progress-bar td.progress-bar-done{
   box-shadow: none;
 }
 
+/* ========== Button ========== */
+#visible-am-button{
+  font-size: 14px !important;
+  height: 30px;
+  width: 30px;
+  line-height: 2 !important;
+  margin-top: 15px !important;
+  border-radius: 50%;
+}
+#visible-am-container div#visible-am-list{
+  top: 59px!important;
+}
+#visible-am-container.visible #visible-am-button:after{
+  bottom: 0!important;
+}
+#visible-am-container .am-message > .error{
+  background-position: left top;
+  line-height: 1.5;
+}
+
 /* ========== Breadcrumbs ========== */
 #breadcrumbBar{
-  background-color: #333;
+  background: none!important;
   color: #fff;
   border: none;
   margin-bottom: 0;
@@ -419,11 +443,12 @@ pre.logrecord-metadata{
 }
 
 
-
+img[src*="disabled_anime.gif"],
 img[src*="grey_anime.gif"],
 img[src*="blue_anime.gif"],
 img[src*="yellow_anime.gif"],
 img[src*="red_anime.gif"],
+img[src*="disabled.png"],
 img[src*="grey.png"],
 img[src*="yellow.png"],
 img[src*="blue.png"],
@@ -431,11 +456,12 @@ img[src*="red.png"]{
   border-radius: 50%;
   margin-left: 5px;
 }
-
+img[src*="images/48x48/disabled_anime.gif"],
 img[src*="images/48x48/grey_anime.gif"],
 img[src*="images/48x48/blue_anime.gif"],
 img[src*="images/48x48/yellow_anime.gif"],
 img[src*="images/48x48/red_anime.gif"],
+img[src*="images/48x48/disabled.png"],
 img[src*="images/48x48/grey.png"],
 img[src*="images/48x48/blue.png"],
 img[src*="images/48x48/yellow.png"],
@@ -444,10 +470,12 @@ img[src*="images/48x48/red.png"]{
   margin-right: 10px;
 }
 
+img[src*="images/32x32/disabled_anime.gif"],
 img[src*="images/32x32/grey_anime.gif"],
 img[src*="images/32x32/blue_anime.gif"],
 img[src*="images/32x32/yellow_anime.gif"],
 img[src*="images/32x32/red_anime.gif"],
+img[src*="images/32x32/disabled.png"],
 img[src*="images/32x32/grey.png"],
 img[src*="images/32x32/blue.png"],
 img[src*="images/32x32/yellow.png"],
@@ -455,19 +483,24 @@ img[src*="images/32x32/red.png"]{
   padding: 0 32px 0 0;
 }
 
+img[src*="images/24x24/disabled_anime.gif"],
 img[src*="images/24x24/grey_anime.gif"],
 img[src*="images/24x24/blue_anime.gif"],
 img[src*="images/24x24/yellow_anime.gif"],
+img[src*="images/24x24/disabled.png"],
 img[src*="images/24x24/red_anime.gif"],
 img[src*="images/24x24/grey.png"],
 img[src*="images/24x24/blue.png"],
 img[src*="images/24x24/red.png"]{
   padding: 0 24px 0 0;
 }
+
+img[src*="images/16x16/disabled_anime.gif"],
 img[src*="images/16x16/grey_anime.gif"],
 img[src*="images/16x16/blue_anime.gif"],
 img[src*="images/16x16/yellow_anime.gif"],
 img[src*="images/16x16/red_anime.gif"],
+img[src*="images/16x16/disabled.png"],
 img[src*="images/16x16/grey.png"],
 img[src*="images/16x16/blue.png"],
 img[src*="images/16x16/yellow.png"],
@@ -476,7 +509,8 @@ img[src*="images/16x16/red.png"]{
 }
 
 img[src*="grey_anime.gif"],
-img[src*="grey.png"]{
+img[src*="grey.png"],
+img[src*="disabled.png"]{
   background-color: #DDDDDD;
 }
 
